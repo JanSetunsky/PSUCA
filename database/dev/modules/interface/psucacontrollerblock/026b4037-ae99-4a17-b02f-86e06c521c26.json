@@ -1,0 +1,4 @@
+[{'Selections':[
+    {'ServiceProvider':[{'Id':'026b4037-ae99-4a17-b02f-86e06c521c26','Name':'Controller','Items':[{'StatusVariable':'$Cache:Controller','Buttons':[{'Icon':'Cogs','Title':'aaa','DataSet':'null','Content':[null]},{'Icon':'FileInvoiceDollar','Title':'scscs','DataSet':'null','Content':[null]}]}]}]},
+    {'TerminalProvider':'null'}
+]}]

@@ -1,0 +1,12 @@
+    [{
+        'email':'admin@admin.com',
+        'name':'admin','password':
+        'MOJEHESLOjeadmin12345',
+        'credential':'Developer'
+    },
+    {
+        'email':'test@test.com',
+        'name':'test',
+        'password':'12345',
+        'credential':'EmployeeAdministrator'
+    }]

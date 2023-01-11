@@ -1,0 +1,4 @@
+[{'Selections':[
+    {'ServiceProvider':[{'Id':'3eb996a5-d6b9-4490-8219-75374deb0ae0','Name':'Dashboard','Items':[{'StatusVariable':'$Cache:Dashboard','Buttons':[{'Icon':'ShareAlt','Title':'cscscsc','DataSet':'null','Content':[null]},{'Icon':'Desktop','Title':'asdasdas','DataSet':'null','Content':[null]}]}]}]},
+    {'TerminalProvider':'null'}
+]}]

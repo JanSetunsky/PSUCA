@@ -1,0 +1,20 @@
+[
+  {
+    "TableId": "c88fa622-9e27-42f2-94d9-92689ae5fc84",
+    "ItemId": "69e4940b-bb0a-4293-a877-1b4c445b023c",
+    "ItemName": "final_item_id",
+    "ItemType": "1",
+    "ItemTypeKey": "None",
+    "ItemTypeData": "Int",
+    "ItemMandatory": true
+  },
+  {
+    "TableId": "c88fa622-9e27-42f2-94d9-92689ae5fc84",
+    "ItemId": "d659b0c6-e452-4664-81e0-2eb18b122757",
+    "ItemName": "final_item_name",
+    "ItemType": "2",
+    "ItemTypeKey": "None",
+    "ItemTypeData": "String",
+    "ItemMandatory": "True"
+  }
+]

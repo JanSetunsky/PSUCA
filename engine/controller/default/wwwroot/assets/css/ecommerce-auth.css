@@ -1,0 +1,190 @@
+
+/* CARD NUMBER */
+#basicpill-cardno-input {
+    background-color: white;
+}
+#basicpill-cardno-input:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-ae {
+    background-color: white;
+}
+#basicpill-cardno-input-ae:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-vi {
+    background-color: white;
+}
+#basicpill-cardno-input-vi:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-mc {
+    background-color: white;
+}
+#basicpill-cardno-input-mc:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-dc {
+    background-color: white;
+}
+#basicpill-cardno-input-dc:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-din {
+    background-color: white;
+}
+#basicpill-cardno-input-din:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+#basicpill-cardno-input-jcb {
+    background-color: white;
+}
+#basicpill-cardno-input-jcb:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+/* EXPIRE DATE */
+#basicpill-expiration-input {
+    background-color: white;
+}
+#basicpill-expiration-input:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+/* SECURE CODE */
+#basicpill-card-verification-input {
+    background-color: white;
+}
+#basicpill-card-verification-input:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+/* NAME ON CARD */
+#basicpill-namecard-input {
+    background-color: white;
+}
+#basicpill-namecard-input:focus {
+    background-color: #fffae6 !important;
+    border-color: #e7e4db !important;
+}
+
+.card-type-ae {
+    background-image: url("/app/root/assets/images/creditcard/brands/ae-200x125.png");
+}
+.card-type-vi {
+    background-image: url("/app/root/assets/images/creditcard/brands/visa-200x125.png");
+}
+.card-type-mc {
+    background-image: url("/app/root/assets/images/creditcard/brands/mc-200x125.png");
+}
+.card-type-dc {
+    background-image: url("/app/root/assets/images/creditcard/brands/dc-200x125.png");
+}
+.card-type-din {
+    background-image: url("/app/root/assets/images/creditcard/brands/din-200x125.png");
+}
+.card-type-jcb {
+    background-image: url("/app/root/assets/images/creditcard/brands/jcb-200x125.png");
+}
+
+.default-img-card-type {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: inherit;
+}
+
+#box-card-type-border-ae {
+    border: 1px #ced4da solid;
+}
+#box-card-type-border-vi {
+    border: 1px #ced4da solid;
+}
+#box-card-type-border-mc {
+    border: 1px #ced4da solid;
+}
+#box-card-type-border-dc {
+    border: 1px #ced4da solid;
+}
+#box-card-type-border-din {
+    border: 1px #ced4da solid;
+}
+#box-card-type-border-jcb {
+    border: 1px #ced4da solid;
+}
+
+#box-card-type-input-ae {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+#box-card-type-input-vi {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+#box-card-type-input-mc {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+#box-card-type-input-dc {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+#box-card-type-input-din {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+#box-card-type-input-jcb {
+    margin-top: -35px;
+    margin-right: 2px;
+    float: right;
+}
+
+
+.box-card-type-input {
+    width: 40px;
+    height: 25px;
+    padding: 1px 1px 1px 1px;
+    position: relative;
+    background-color: white;
+    border: 1px #ced4da solid;
+}
+
+.box-card-type {
+    width: 40px;
+    height: 25px;
+    padding: 1px 1px 1px 1px;
+    position: relative;
+    background-color: white;
+}
+
+.auth-img {
+    float: right;
+    max-width: 195px!important;
+}
+
+
+#verify-recovery-password-email-block-id {
+    display:block;
+}
+#verify-recovery-password-phone-block-id {
+    display:none;
+}

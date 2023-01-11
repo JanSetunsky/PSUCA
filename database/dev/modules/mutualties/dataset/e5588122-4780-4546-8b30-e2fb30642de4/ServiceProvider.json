@@ -1,0 +1,14 @@
+[{'BindingName':'aaa','BlockPath':'PsucaDashboardBlock','Dataset':[
+  {
+    "Id": "57473264-a71e-4b4f-93f5-42933d43e419",
+    "Provider": "ServiceProvider"
+  },
+  {
+    "Id": "9b7bf888-4c5f-4ff4-a64a-40cadfebf427",
+    "Provider": "ServiceProvider"
+  },
+  {
+    "Id": "9b7bf888-4c5f-4ff4-a64a-40cadfebf427",
+    "Provider": "TerminalProvider"
+  }
+]}]

@@ -1,0 +1,1 @@
+﻿New-PSUScript -Name "collector.ps1" -Description "Powershell_Universal_Collector" -Path "collector.ps1" -Environment "7.2.5" -InformationAction "Continue"

@@ -1,0 +1,19 @@
+[{
+    'status':'1',
+    'notificationlist':[{
+        'type':'Start Job',
+        'name':'Notification 1',
+        'desc':'Notification Notification Notification Notification.',
+        'ticks':'637934757386552817',
+        'credential':'admin',
+        'path':'xxxx'
+    },
+    {
+        'type':'Start Job',
+        'name':'Notification 2',
+        'desc':'Notification Notification Notification Notification.',
+        'ticks':'637934757386552817',
+        'credential':'admin',
+        'path':'xxxx'
+    }]
+}]

@@ -1,0 +1,95 @@
+    New-UDElement -Tag 'tr' -Content {
+        New-UDElement -Tag 'td' -Content {
+            New-UDLink -Children {
+                New-UDElement -Tag 'p' -Content {
+                    New-UDTypography -Text 'importtableitemcontentname' -ClassName 'entity-center-box-grid-inner-title'
+                }
+            } -OnClick {
+                Show-UDModal -Header {
+                    New-UDTypography -Text 'Table Item Parameters' -ClassName 'entity-center-box-inner-title'
+                } -Content {
+                    $TableItemIndexNumber           = 'importtableitemindexnumber'
+                    $TableItemUniqueId              = ([guid]::NewGuid()).Guid
+                    $TableItemNameTextBoxId         = "$TableItemUniqueId"+'-PropertiesIdSelectBox'
+                    $TableItemPropertiesSelectBoxId = "$TableItemUniqueId"+'-NameIdTextBox'
+                    New-UDElement -Tag 'div' -Content {
+                        New-UDElement -Tag 'table' -Content {
+                            New-UDElement -Tag 'tr' -Content {
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDElement -Tag 'tr' -Content {
+                                        New-UDTypography -Text 'Item Name' -ClassName 'entity-center-box-inner-title'
+                                    }
+                                }
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDElement -Tag 'tr' -Content {
+                                        New-UDTextbox -Id $TableItemNameTextBoxId -Type text -ClassName 'entity-center-box-properties-text' -Value 'importtableitemcontentname'
+                                    }
+                                }
+                            }
+                            New-UDElement -Tag 'tr' -Content {
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDElement -Tag 'tr' -Content {
+                                        New-UDTypography -Text 'Item Properties' -ClassName 'entity-center-box-inner-title'
+                                    }
+                                }
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDElement -Tag 'tr' -Content {
+                                        New-UDStyle -Content {
+                                            New-UDSelect -Id $TableItemPropertiesSelectBoxId -ClassName 'entity-center-box-properties-select' -Option {
+                                                New-UDSelectOption -Name 'Id' -Value 'Id'
+                                                New-UDSelectOption -Name 'Standard' -Value 'Standard'
+                                                New-UDSelectOption -Name 'Foreign Key' -Value 'Foreign Key'
+                                            } -OnChange {
+
+                                            }
+                                        } -Style '
+                                            label + .css-1ntzb12 {
+                                                margin-top: 0px;
+                                            }
+                                        '
+                                    }
+                                }
+                            }
+                            New-UDElement -Tag 'p' -Content {}
+                        }
+                        New-UDElement -Tag 'table' -Content {
+                            New-UDElement -Tag 'tr' -Content {
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDButton -Text 'Save properties' -ClassName 'entity-center-box-btn' -OnClick {
+                                        $EditItemName       = (Get-UDElement -Id $TableItemNameTextBoxId).Value
+                                        $EditItemProperties = (Get-UDElement -Id $TableItemPropertiesSelectBoxId).Value
+                                        $Session:RecoveryTableItemName        = $EditItemName
+                                        $Session:RecoveryTableItemProperties  = $EditItemProperties
+                                        $Session:RecoveryTableItemIndexNumber = $TableItemIndexNumber
+                                        $UddynamicUniqueId                    = $Session:RecoveryUddynamicUniqueId
+                                        $Session:RecoveryUddynamicUniqueId    = $UddynamicUniqueId
+                                        $NewGridItemSC            = $Session:RecoveryNewGridItemSC
+                                        [string]$StringGridItemSC = $NewGridItemSC
+                                        $ReplacerNewGridItemSC    = $StringGridItemSC
+                                        $NewGridItemSCToJson = $ReplacerNewGridItemSC | ConvertTo-Json -Depth 100
+                                        $NewGridItemPSCO     = [PSCustomObject]@{
+                                            IdSC             = 'importadditemid'
+                                            ScriptBlock      = $NewGridItemSCToJson
+                                        }
+                                        [array]($Session:DatasetGridItemList[$TableItemIndexNumber]).items += $NewGridItemPSCO
+                                        
+                                        $Session:InvokeGridItemsSC           = (($Session:DatasetGridItemList[$GetIndexNumber]).items).ScriptBlock
+                                        $Session:CallCreateGridItemCondition = $true
+                                        Sync-UDElement -Id $UddynamicUniqueId
+                                        Hide-UDModal
+                                    }
+                                }
+                                New-UDElement -Tag 'td' -Content {
+                                    New-UDButton -Text 'Remove Item' -ClassName 'entity-center-box-btn' -OnClick {
+                                        Hide-UDModal
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } -Footer {
+                    New-UDButton -Text 'Close' -ClassName 'entity-center-box-btn' -OnClick {Hide-UDModal}
+                }
+            }
+        }
+    }

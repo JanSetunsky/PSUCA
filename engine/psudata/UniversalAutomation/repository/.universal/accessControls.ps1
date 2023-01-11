@@ -1,0 +1,1 @@
+﻿New-PSUAccessControl -Role "Administrator" -ObjectType "Script" -Type "All"

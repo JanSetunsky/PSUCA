@@ -1,0 +1,19 @@
+{
+  "Data": [
+    {
+      "Path": "D:\\PSUCA\\database\\dev\\modules\\taskcenter\\list\\super_mega_task.json",
+      "Name": "super_mega_task",
+      "Interface": "9b7bf888-4c5f-4ff4-a64a-40cadfebf427",
+      "TaskId": "9a214ecd-452e-4b03-913e-c69d57c5b475"
+    },
+    {
+      "Path": "D:\\PSUCA\\database\\dev\\modules\\taskcenter\\list\\test_spec_task_01.json",
+      "Name": "test_spec_task_01",
+      "Interface": "9b7bf888-4c5f-4ff4-a64a-40cadfebf427",
+      "TaskId": "4c35caa0-2239-4654-99e9-50d2268fc7c1"
+    }
+  ],
+  "Name": "Local Computer",
+  "Id": "9b7bf888-4c5f-4ff4-a64a-40cadfebf427",
+  "Type": "runspace_new"
+}
